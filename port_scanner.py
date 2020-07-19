@@ -2,18 +2,21 @@ from socket import *
 from stringcolor import *
 from time import *
 
+
 def scan(ip):
 	new = "yes"
-def main():
 
+
+def main():
 	print(cs("   ___              __       _       _ _   \n  / __\___  _ __   / _\_ __ | | ___ (_) |_ \n / /  / _ \| '_ \  \ \| '_ \| |/ _ \| | __|\n/ /__| (_) | | | |__\ \ |_) | | (_) | | |_ \n\____/\___/|_| |_(_)__/ .__/|_|\___/|_|\__|\n                      |_|                  \n", "#FFFF33"))
-	print(cs("1. I have the ip, stfu nurd\n2. I have the hostname, go away\n3. What in the god forsaken hell is ip or hostname?!?!?!\n\npress q or quit to exit", "#FF0000"))
+	print(cs("1. I have the ip, stfu nurd\n2. I have the hostname, go away\n3. What in the god forsaken hell is ip or hostname?!?!?!\n\npress q or quit to exit","#FF0000"))
 
 	action = input(cs(">", "#169900"))
-	ip = ""
-	url = ""
+	ip = "saf"
+	url = "sdf"
+	again = "dsf"
 	cont = "true"
-	error = "Invalid operation, please try again" #169900
+	error = "Invalid operation, please try again"  # 169900
 
 	if action == "1":
 		print(cs("Input ip", "#7F1515"))
@@ -34,7 +37,8 @@ def main():
 		else:
 			print("Ip address is " + ip + " from " + url)
 	elif action == "3":
-		print("Shut the hell up retard, stop faking stupidity. Oh wait, you're too much of a demented ass cockroach to even think of faking.")
+		print(
+			"Shut the hell up retard, stop faking stupidity. Oh wait, you're too much of a demented ass cockroach to even think of faking.")
 		sleep(1)
 		print("\nhttp://tiny.cc/IPvsHostname")
 	elif action == "dbg":
@@ -47,6 +51,7 @@ def main():
 
 	sleep(1)
 	print("Scan again? y or yes/n or no")
+	again = input(cs(">", "#169900"))
 	if again == "y" or "yes":
 		main()
 	elif again == "n" or "no":
